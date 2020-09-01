@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirby: Nightmare in Dream Land</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- 화면 슬라이드 부분-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script defer src="main.js"></script>
+
+    <!-- mouseup_down + Draggable-revert 부분 -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="draggable.js"></script>
+
+
+    <!-- 배경 css-->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div>
+                <h1>Kirby: Nightmare in Dream Land</h1>
+            </div>
+            <div>
+                <img src="img/section1/kirby.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/section1/soundOff.png" id = "musicIcon" style="width: 100px; height: 100px; padding-top: 30px;">
+                <audio id="playMusic">
+                    <source src="mainMusic.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div>
+                <img src="img/section2/sleep.png" alt="">
+            </div>
+            <div class="section_contents">
+                The peaceful world of Dream Land is in great danger.<br>
+                In Dream Land, dreams had always flowed out of the wonderful Fountain of Dreams,<br>
+                which the Fountain of Dreams collected the hopes and dreams of all living things.<br>
+                It also provided all the good dreams and rest that come from deep sleep.<br>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div>
+                <img src="img/section3/dedede.png" style="width: 400px; height: 400px; padding-bottom:20px">
+            </div>
+            <div class="section_contents">
+                But one day, everyone in Dream Land lost the ability to dream!<br>
+                Apparently, King DeDeDe had been bathing in the Fountain of Dreams!<br>
+                Not only that, but DeDeDe had taken the Star Rod<br>
+                — the source of power of the Fountain of Dreams —<br>
+                and broken it into pieces, giving one to each of his underlings.<br>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div>
+                Click Me!
+            </div>
+            <div id="draggable" class="ui-widget-content">
+                <img src="img/section4/kirbyWalk.gif" style="padding-bottom: 30px;">
+            </div>
+            <div class="section_contents">
+                Now, Kirby must embark on an adventure<br>
+                to restore peaceful naptimes<br>
+                to all residents of Dream Land...<br>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div>
+                <img src="img/section5/inhaling.gif">
+                <img src="img/section5/swallow.gif">
+            </div>
+            <div class="section_contents">
+                Kirby's ability is inhaling objects and creatures to gain their abilities,<br> 
+                as well as his ability to float by expanding his body.
+            </div>
+        </div>
+        <div class="section" id="section6">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="img/section6/fire.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <div class="text">He can use fire</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/section6/ice.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <div class="text">ice</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="img/section6/sword.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <div class="text">sword</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/section6/hammer.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                    <div class="text">hammer</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/section6/andSoOn.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                    <div class="text">and so on...</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            <br>
+        </div>
+    </div>
+</body>
+
+
+<!-- 음악 키고끄는 js -->
+<script src="playMusic.js"></script>
+<!-- mousedown js -->
+<script defer src="mouseupdown.js"></script>
+<!-- imageSlider-->
+<script src="imageSlide.js"></script>
+</html>
+
+
+
+
+<!-- data-src쓰니 화면 내릴떄 뜨네요-->

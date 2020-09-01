@@ -1,0 +1,172 @@
+@font-face 
+{
+    font-family: 'PressStart2P-vaV7';
+    src: url(font/PressStart2P-vaV7.ttf);
+}
+
+@font-face {
+    font-family: 'Fipps-Regular';
+    src: url(font/Fipps-Regular.otf);
+}
+
+.section_contents {
+    font-family: Fipps-Regular;
+    color: black;
+    font-size: 15px;
+
+    padding-left: 40px;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: thick double black;
+    text-align: left;
+}
+
+#section1 {    
+    text-align: center;
+    font-family: PressStart2P-vaV7;
+    font-size: 18px;
+}
+
+#section1 h1 {
+    padding-top: 20px;
+}
+
+#section1 img {
+    width: 400px;
+    padding-top: 10px;
+}
+
+
+#section2 {
+    background-color: #fd99a7;
+    text-align: center;
+}
+
+#section3 {
+    text-align: center;
+    background-color: #E0FFFF;
+}
+
+#section4 {
+    text-align: center;
+    font-family: PressStart2P-vaV7;
+    font-size: 15px;
+    background-color: #BED742;
+}
+
+#section5 {
+    text-align: center;
+    background-color: #FEEEED;
+}
+
+
+#section6 {
+    text-align: center;
+    background-color: #FCAF17;
+}
+
+
+/* imageSlide */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    background-color: #717171;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  
+  .prev {
+      right: 950px;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    font-family: Fipps-Regular;
+    color: black;
+    font-size: 15px;
+    padding: 20px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border: thick double black;
+
+    /*
+    font-family: Fipps-Regular;
+    color: black;
+    font-size: 15px;
+    padding-left: 40px;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: thick double black;
+    text-align: left;
+    */
+
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }

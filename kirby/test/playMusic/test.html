@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <img src="img/section1/soundOff.png" id="musicIcon">
+    <audio id="playMusic">
+        <source src="mainMusic.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="playMusic.js"></script>
+
+<!--
+<script>
+    let toggle = "off";
+
+    musicIcon.onclick = function() {
+        if(toggle == "off") {
+            musicIcon.setAttribute("src", "img/section1/soundOn.png");
+            toggle = "on";
+            playMusic.play();
+        } else {
+            musicIcon.setAttribute("src", "img/section1/soundOff.png");
+            toggle = "off";
+            playMusic.pause();
+        }
+    }
+</script>
+-->
+</html>

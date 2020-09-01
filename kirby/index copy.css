@@ -1,0 +1,67 @@
+@font-face 
+{
+    font-family: 'PressStart2P-vaV7';
+    src: url(font/PressStart2P-vaV7.ttf);
+}
+
+@font-face {
+    font-family: 'Fipps-Regular';
+    src: url(font/Fipps-Regular.otf);
+}
+
+.section_contents {
+    font-family: Fipps-Regular;
+    color: black;
+    font-size: 15px;
+
+    padding-left: 40px;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: thick double black;
+    text-align: left;
+}
+
+#section1 {    
+    text-align: center;
+    font-family: PressStart2P-vaV7;
+    font-size: 18px;
+}
+
+#section1 h1 {
+    padding-top: 20px;
+}
+
+#section1 img {
+    width: 400px;
+    padding-top: 10px;
+}
+
+
+#section2 {
+    background-color: #fd99a7;
+    text-align: center;
+}
+
+#section3 {
+    text-align: center;
+    background-color: #E0FFFF;
+}
+
+#section4 {
+    text-align: center;
+    font-family: PressStart2P-vaV7;
+    font-size: 15px;
+    background-color: #BED742;
+}
+
+#section5 {
+    text-align: center;
+    background-color: #FEEEED;
+}
+
+
+#section6 {
+    text-align: center;
+    background-color: #FCAF17;
+}
