@@ -1,0 +1,1 @@
+https://fireship.io/snippets/intersection-observer-lazy-load-images/

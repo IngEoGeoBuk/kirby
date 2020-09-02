@@ -8,15 +8,15 @@
 
     <!-- 화면 슬라이드 부분-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet"> 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script defer src="main.js"></script>
 
     <!-- mouseup_down + Draggable-revert 부분 -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="draggable.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="draggable.js"></script>
 
 
     <!-- 배경 css-->
@@ -44,10 +44,21 @@
                 <img src="img/section2/sleep.png" alt="">
             </div>
             <div class="section_contents">
-                The peaceful world of Dream Land is in great danger.<br>
-                In Dream Land, dreams had always flowed out of the wonderful Fountain of Dreams,<br>
-                which the Fountain of Dreams collected the hopes and dreams of all living things.<br>
-                It also provided all the good dreams and rest that come from deep sleep.<br>
+                <div id="typing-txt">
+                    <ul>
+                        <li>The peaceful world of Dream Land is in great danger.</li>
+                        <li>In Dream Land, dreams had always flowed out of the wonderful Fountain of Dreams,</li>
+                        <li>which the Fountain of Dreams collected the hopes and dreams of all living things.</li>
+                        <li>It also provided all the good dreams and rest that come from deep sleep.</li>
+                    </ul>
+                </div>
+                <div id="typing">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div> 
             </div>
         </div>
         <div class="section" id="section3">
@@ -112,19 +123,18 @@
                 </div>
             <br>
         </div>
+
     </div>
 </body>
 
 
 <!-- 음악 키고끄는 js -->
-<script src="playMusic.js"></script>
+<script defer src="playMusic.js"></script>
 <!-- mousedown js -->
 <script defer src="mouseupdown.js"></script>
 <!-- imageSlider-->
-<script src="imageSlide.js"></script>
-</html>
-
-
-
+<script defer src="imageSlide.js"></script>
+<!-- textTyping-->
+<script defer src="textTyping.js"></script>
 
 <!-- data-src쓰니 화면 내릴떄 뜨네요-->
