@@ -31,10 +31,10 @@
                 <p class="typing"></p>
             </div>
             <div>
-                <img src="img/section1/kirby.jpg" alt="">
+                <img data-lazy="img/section1/kirby.jpg" alt="">
             </div>
             <div>
-                <img src="img/section1/soundOff.png" id = "musicIcon" style="width: 100px; height: 100px; padding-top: 30px;">
+                <img data-lazy="img/section1/soundOff.png" id = "musicIcon" style="width: 100px; height: 100px; padding-top: 30px;">
                 <audio id="playMusic">
                     <source src="mainMusic.mp3" type="audio/mpeg">
                 </audio>
@@ -42,7 +42,7 @@
         </div>
         <div class="section" id="section2">
             <div>
-                <img src="img/section2/sleep.png" alt="">
+                <img data-lazy="img/section2/sleep.png" alt="">
             </div>
             <div class="section_contents">
                 The peaceful world of Dream Land is in great danger.<br>
@@ -53,7 +53,7 @@
         </div>
         <div class="section" id="section3">
             <div>
-                <img src="img/section3/dedede.png" style="width: 400px; height: 400px; padding-bottom:20px">
+                <img data-lazy="img/section3/dedede.png" style="width: 400px; height: 400px; padding-bottom:20px">
             </div>
             <div class="section_contents">
                 But one day, everyone in Dream Land lost the ability to dream!<br>
@@ -68,7 +68,7 @@
                 Click Me!
             </div>
             <div id="draggable" class="ui-widget-content">
-                <img src="img/section4/kirbyWalk.gif" style="padding-bottom: 30px;">
+                <img data-lazy="img/section4/kirbyWalk.gif" style="padding-bottom: 30px;">
             </div>
             <div class="section_contents">
                 Now, Kirby must embark on an adventure<br>
@@ -78,8 +78,8 @@
         </div>
         <div class="section" id="section5">
             <div>
-                <img src="img/section5/inhaling.gif">
-                <img src="img/section5/swallow.gif">
+                <img data-lazy="img/section5/inhaling.gif">
+                <img data-lazy="img/section5/swallow.gif">
             </div>
             <div class="section_contents">
                 Kirby's ability is inhaling objects and creatures to gain their abilities,<br> 
@@ -89,42 +89,60 @@
         <div class="section" id="section6">
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                  <img src="img/section6/fire.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <img data-lazy="img/section6/fire.gif" style="width:300px; height:300px; padding-bottom: 30px">
                   <div class="text">He can use fire</div>
                 </div>
                 <div class="mySlides fade">
-                  <img src="img/section6/ice.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <img data-lazy="img/section6/ice.gif" style="width:300px; height:300px; padding-bottom: 30px">
                   <div class="text">ice</div>
                 </div>
                 <div class="mySlides fade">
-                  <img src="img/section6/sword.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                  <img data-lazy="img/section6/sword.gif" style="width:300px; height:300px; padding-bottom: 30px">
                   <div class="text">sword</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="img/section6/hammer.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                    <img data-lazy="img/section6/hammer.gif" style="width:300px; height:300px; padding-bottom: 30px">
                     <div class="text">hammer</div>
                 </div>
                 <div class="mySlides fade">
-                    <img src="img/section6/andSoOn.gif" style="width:300px; height:300px; padding-bottom: 30px">
+                    <img data-lazy="img/section6/andSoOn.gif" style="width:300px; height:300px; padding-bottom: 30px">
                     <div class="text">and so on...</div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-            <br>
+            </div>
+            <div class="section">
+                <div id="section7">
+                    <div class="item item1"><img class="section7_img" data-lazy="img/section7/1.png"></div>
+                    <div class="item item2"><img class="section7_img" data-lazy="img/section7/2.png"></div>
+                    <div class="item item3"><img class="section7_img" data-lazy="img/section7/3.png"></div>
+                    <div class="item item4"><img class="section7_img" data-lazy="img/section7/4.png"></div>
+                    <div class="item item5"><img class="section7_img" data-lazy="img/section7/5.png"></div>
+                    <div class="item item6"><img class="section7_img" data-lazy="img/section7/6.png"></div>
+                    <div class="item item7"><img class="section7_img" data-lazy="img/section7/7.png"></div>
+                </div>
+                <div class="section_contents" style="width: 100%; height: 20%; padding: 0; text-align: center;">
+                    Kirby has to clear seven stage, because Dedede has broken the Star Rod,<br>
+                    the power source of the fountain, into seven pieces, <br>
+                    giving six pieces to his friends and keeping one himself. <br>
+                </div>
+            </div>
         </div>
     </div>
 </body>
 
 
 <!-- 음악 키고끄는 js -->
-<script src="playMusic.js"></script>
+<script defer src="playMusic.js"></script>
 <!-- mousedown js -->
 <script defer src="mouseupdown.js"></script>
 <!-- imageSlider-->
-<script src="imageSlide.js"></script>
+<script defer src="imageSlide.js"></script>
 <!-- typingText -->
-<script src="textTyping.js"></script>
+<script defer src="textTyping.js"></script>
+<!-- lazyloading -->
+<script defer src="lazyloading.js"></script>
 </html>
 
 
