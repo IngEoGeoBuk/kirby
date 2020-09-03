@@ -1,15 +1,20 @@
-.container {
-  display: flex;
+
+/*animation-fill-mode : 마지막 상태에서 멈추게 하는거 */
+
+/* 심플(버튼 하나 누르면 사진 바뀌면서 움직이는 거)
+.move {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation-name: myfirst;
+  animation-duration: 4s; 
+  animation-fill-mode: both;
 }
 
-.item {
-  width: 40vh;height: 400px;
+@keyframes myfirst {
+  from {left: 0px; top:0px ;}
+  to {left: 200px; top:0px ;}
 }
 
-.item1{background-color: red;}
-.item2{background-color: orange;}
-.item3{background-color: yellow;}
-.item4{background-color: green;}
-.item5{background-color: blue;}
-.item6{background-color: indigo;}
-.item7{background-color: purple;}
+
+*/
