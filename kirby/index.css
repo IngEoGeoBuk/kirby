@@ -22,6 +22,8 @@
   text-align: left;
 }
 
+
+/* section1 */ 
 #section1 {    
   text-align: center;
   font-family: PressStart2P-vaV7;
@@ -36,6 +38,38 @@
   width: 400px;
   padding-top: 10px;
 }
+
+#musicIcon:hover {
+  cursor: pointer;
+}
+
+/* typing text */ 
+
+p.typing-txt {
+  display: none;
+}
+
+.typing {
+  /*       position: absolute;*/
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  border-right: 1px solid #ccc;
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+/* section1 */ 
 
 
 #section2 {
@@ -55,16 +89,111 @@
   background-color: #BED742;
 }
 
+#section4 img:hover {
+  cursor: pointer;
+}
+
 #section5 {
   text-align: center;
   background-color: #FEEEED;
 }
 
-
+/*section6*/
 #section6 {
   text-align: center;
   background-color: #FCAF17;
 }
+
+/* imageSlide */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  background-color: #717171;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.prev {
+    right: 950px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: Fipps-Regular;
+  color: black;
+  font-size: 15px;
+  padding: 20px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border: thick double black;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*section6*/
 
 /*section7*/ 
 
@@ -95,124 +224,72 @@
 .item6{background-color: orange;}
 .item7{background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, navy, purple);}
 
-
-
-/* typing text */ 
-
-p.typing-txt {
-  display: none;
+.btnlocation {
+  text-align: center;
 }
 
-.typing {
-  /*       position: absolute;*/
+#move {
+  font-family: PressStart2P-vaV7;
+  background-color: white;
+  border: none;
+  color: black;  
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  animation-name: cursor;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
-  border-right: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 30px;
 }
+/*section7*/ 
 
-@keyframes cursor {
-  0% {
-    border-right: 1px solid #fff;
-  }
-  50% {
-    border-right: 1px solid #000;
-  }
-  100% {
-    border-right: 1px solid #fff;
-  }
+#section_contents8 {
+  text-align: center;
+  width: 100%;
 }
 
 
+/* section9 */
+#section9 {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: backgroundchange 10s infinite;
+}
 
-/* imageSlide */
+#imgup {
+  position: absolute;
+  bottom: -400px;
+  left: 300px;
+  right: 0;
+  margin: 0 auto;
+  transition: all 4s ease-out;
+  -webkit-transition: all 4s ease-out;
+}
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    text-align: center;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    background-color: #717171;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  
-  .prev {
-      right: 950px;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    font-family: Fipps-Regular;
-    color: black;
-    font-size: 15px;
-    padding: 20px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    border: thick double black;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
+@keyframes backgroundchange {
+  0% {background-color: #4b3686;}
+  25% {background-color: #491c52;}
+  75% {background-color: #3a383a;}
+  100% {background-color: black;}
+}
+
+.fp-viewing-8 #imgup {
+  bottom: 180px;
+}
+
+.fp-viewing-9 #imgup {
+  bottom: 0;
+}
+
+#section_contents9 {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* section9 */
+
+#section10 {
+  text-align: center;
+}
